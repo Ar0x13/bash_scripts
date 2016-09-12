@@ -3,8 +3,8 @@ backup_dir="/home/user_space/Backups"
 wp_db_pass="pass_phrase"
 wp_database="WP_DB"
 wp_root_dir="/var/www/html"
-db_backup_name=""$wp_database"_`date +%Y-%M-%d`".sql
-wp_backup_files=""$backup_dir/wp_files"_`date +%Y-%M-%d`"
+db_backup_name=""$wp_database"_`date +%Y-%m-%d_%H_%M_%S`".sql
+wp_backup_files=""$backup_dir/wp_files"_`date +%Y-%m-%d_%H_%M_%S`"
 curdate=$(date +"%Y-%M-%d-%H:%M:%S")
 
 #------------=======Functions========------------
