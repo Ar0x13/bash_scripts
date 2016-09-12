@@ -3,8 +3,8 @@ backup_dir="/home/user_home/Backups"
 wp_db_pass="pass_phrase"
 wp_database="WP_DB"
 wp_root_dir="/var/www/html"
-db_backup_name=""$wp_database"_`date +%Y-%M-%d-%H-%M-%S`".sql
-wp_backup_files=""/home/user_home/Backups/wp_files"_`date +%Y-%M-%d-%H-%M-%S`"
+db_backup_name=""$wp_database"_`date +%Y-%m-%d_%H_%M_%S`".sql
+wp_backup_files=""/home/user_home/Backups/wp_files"_`date +%Y-%m-%d_%H_%M_%S`"
 new_wp_link="https://wordpress.org/latest.tar.gz"
 curdate=$(date +"%Y-%M-%d-%H:%M:%S")
 
