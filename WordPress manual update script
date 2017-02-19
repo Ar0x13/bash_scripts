@@ -42,6 +42,7 @@ wp_move2_web_root () {
 wp_change_files () {
     cp -frp $wp_backup_files/wp-config.php /var/www/html
     cp -frp $wp_backup_files/wp-content /var/www/html
+    chown -R apache:apache /var/www/html/*
 }
 #--------========MAIN CODE=========-----------
 #Script description
