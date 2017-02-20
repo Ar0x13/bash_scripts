@@ -31,3 +31,6 @@ cd "$backup_dir"
 clean_old_files
 backup_db
 backup_wp_files
+
+#Mail notification with date
+ echo "$(date +%F) How2 backup has prepared" | sendmail your_mail_box_name
