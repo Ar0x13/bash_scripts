@@ -1,0 +1,16 @@
+-prune
+! -iname robots.txt
+! -iname sitemap_gen.sh
+! -iname sitemap_options.txt
+! -iname sitemap.\*
+! -iname .\*
+! -iname *.png
+! -iname *.jpg
+! -iname *.svg
+! -iname *.js
+! -path ./css/\*
+! -path ./js/\*
+! -path ./img/\*
+! -path ./tmp/\*
+! -path ./fonts/\*
+! -path ./stats/\*
