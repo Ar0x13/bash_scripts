@@ -6,26 +6,19 @@
 # Email :
 ##################################################################
 
-RUN=0
-MAKE=0
-DEV=0
-OPT=0
+ubuntu=0
+centos=0
+
 ARGC="$#"
 
 while test $# -gt 0
 do
     case "$1" in
-        run)
-          RUN=1
+        ubuntu)
+          ubuntu=1
           ;;
-        make)
-          MAKE=1
-          ;;
-        dev)
-          DEV=1
-          ;;
-        opt)
-          OPT=1
+        centos)
+          centos=1
           ;;
     esac
     shift
