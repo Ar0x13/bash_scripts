@@ -40,18 +40,11 @@ fi
 
 
 if [[ $RUN == "1" ]]; then
-    echo "Install packages needed for execution"
+    echo "Install packages "
     sudo apt install \
-        gir1.2-keybinder-3.0 \
-        gir1.2-notify-0.7 \
-        gir1.2-vte-2.91 \
-        libkeybinder-3.0-0 \
-        libutempter0 \
+        # utility for prety json formatting in pipeline
+        jq \
         python3 \
-        python3-cairo \
-        python3-dbus \
-        python3-gi \
-        python3-pbr \
         python3-pip
 fi
 
