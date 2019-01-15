@@ -36,8 +36,7 @@ if [[ $RUN == "1" ]]; then
     echo "Install packages "
     sudo apt install \
         python-pip \
-        # utility for prety json formatting in pipeline
-        jq \
+        jq \ 
         python3.7 \
         python3-pip
 fi
