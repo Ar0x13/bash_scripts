@@ -1,11 +1,11 @@
 # bash_scripts
 
-Bash scritp info
+Bash script info
 
 #!/bin/bash 
 ###############################################################################
-#Script Name    :                        
-#Description    :                                                                      
-#Author         : Andrey Ruban       
-#Email          :  
+# Script Name    :                        
+# Description    :                                                                      
+# Author         : Andrey Ruban       
+# Email          :  
 ################################################################################
