@@ -22,7 +22,8 @@ do
           ;;
         *)
           echo "Please, select ubuntu or centos OS"
-    esac    
+    esac
+    shift
 done
 
 if [[ $UBUNTU == "1" ]]; then
@@ -33,8 +34,8 @@ if [[ $UBUNTU == "1" ]]; then
         pydf \
         python-pip \
         jq \ 
-        python3.7 \
-        python3-pip
+        python3.\7 
+
 fi
 
 if [[ $CENTOS == "1" ]]; then
