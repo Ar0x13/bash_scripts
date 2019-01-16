@@ -15,11 +15,13 @@ while test $# -gt 0
 do
     case "$1" in
         ubuntu)
-          ubuntu=1
+          UBUNTU=1
           ;;
         centos)
-          centos=1
+          CENTOS=1
           ;;
+        *)
+          echo "Please, select ubuntu or centos OS"
     esac    
 done
 
