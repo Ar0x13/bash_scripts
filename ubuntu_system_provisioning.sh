@@ -1,6 +1,6 @@
 #!/bin/bash 
 ################################################################## 
-# Script Name : ubuntu_system_provisioning.sh
+# Script Name : system_provisioning.sh
 # Description : Install software/packages after clean system bootstrap
 # Author : Andrey Ruban
 # Email :
