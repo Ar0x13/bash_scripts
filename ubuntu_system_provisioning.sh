@@ -1,13 +1,13 @@
 #!/bin/bash 
 ################################################################## 
 # Script Name : ubuntu_system_provisioning.sh
-# Description : Install software after clean system installation
+# Description : Install software/packages after clean system bootstrap
 # Author : Andrey Ruban
 # Email :
 ##################################################################
 
-ubuntu=0
-centos=0
+UBUNTU=0
+CENTOS=0
 
 ARGC="$#"
 
@@ -20,28 +20,22 @@ do
         centos)
           centos=1
           ;;
-    esac
-    shift
+    esac    
 done
 
-if [[ "$ARGC" == "0" ]]; then
-          RUN=1;
-          MAKE=1;
-          DEV=1;
-          OPT=0;
-fi
-
-
-if [[ $RUN == "1" ]]; then
+if [[ $UBUNTU == "1" ]]; then
     echo "Install packages "
     sudo apt install \
+        wget \
+        net-tools \
+        pydf \
         python-pip \
         jq \ 
         python3.7 \
         python3-pip
 fi
 
-if [[ $MAKE == "1" ]]; then
+if [[ $CENTOS == "1" ]]; then
     echo "Install packages needed for making guake"
     sudo apt install \
         gettext \
@@ -50,19 +44,4 @@ if [[ $MAKE == "1" ]]; then
         pandoc
 fi
 
-if [[ $DEV == "1" ]]; then
-    echo "Install needed development packages"
-    sudo apt install \
-        aspell-fr \
-        colortest \
-        dconf-editor \
-        glade \
-        poedit \
-        gnome-tweak-tool
-fi
 
-if [[ $OPT == "1" ]]; then
-    echo "Install packages optional for execution"
-    sudo apt install \
-        numix-gtk-theme
-fi
