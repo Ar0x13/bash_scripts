@@ -64,18 +64,18 @@ EOF
 answer () {
      echo -e "Are you checked for disabled plugins?"
      while read response; do
-     echo
-     case $response in
-     [yY][eE][sS]|[yY])
+     echo ""
+        case $response in
+           [yY][eE][sS]|[yY])
               return 0
               break
               ;;
-     [nN][oO]|[nN])
+           [nN][oO]|[nN])
               exit 1
               ;;
-              *)
+           *)
               printf "Please, enter Y(yes) or N(no)! "
-              esac
+        esac
      done
 }
 
