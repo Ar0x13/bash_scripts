@@ -1,7 +1,7 @@
 # bash_scripts
+Some project description
 
-Bash script info
-
+```
 #!/bin/bash 
 ############################################################################
 # Script Name    :                        
@@ -15,26 +15,21 @@ set -e
 
 # prevents errors in a pipeline from being masked
 set -o pipefail
-
-
-# Emoji Bot
-Emoji bot is a simple code with lambda, which will do actions 
-based on reactions in slack. Created for [ukrops](https://ukrops.club)
-community.
-
-# Features
-TODO
-
-# Deploy
 ```
-insert code here
-```
+### Code structure
+Description
 
 ### Requirements
 - `example - go ≥ 1.13`
 - `example - terraform ≥ 0.12`
 
+# How to Deploy
+```
+insert code here
+```
+# Features
+TODO
+
 # Contribution
 
-### Code structure
-Description
+
