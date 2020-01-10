@@ -16,20 +16,20 @@ set -e
 # prevents errors in a pipeline from being masked
 set -o pipefail
 ```
-### Code structure
+## Code structure
 Description
 
-### Requirements
+## Requirements
 - `example - go ≥ 1.13`
 - `example - terraform ≥ 0.12`
 
-# How to Deploy
+## How to Deploy
 ```
 insert code here
 ```
-# Features
+## Features
 TODO
 
-# Contribution
+## Contribution
 
 
